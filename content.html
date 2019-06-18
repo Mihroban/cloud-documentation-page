@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Google Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="content.css" type="text/css">
+
+    <!-- Bootstrap Link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-lg-3 col-3" id="myScrollspy">
+          <ul class="nav nav-tab flex-column">
+            <li class="nav-item">
+              <img src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/cloud-computing-512.png" class="header-cloud-image" alt="cloud-image">
+              <span class="title">Cloud</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Cloud_Computing">What is Cloud Computing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Cloud_Computing_Services">3 Cloud Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Cloud_Deployment_Models">4 Deployment Models</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Cloud_Service_Providers">Cloud Service Providers</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#AWS">Amazon Web Services</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#AWS_ec2">Amazon EC2</a>
+                <a class="dropdown-item" href="#AWS_s3">Amazon S3</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#reference">References</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="col-lg-9 col-9">
+          <div id="introduction">
+            <h1>Introduction</h1>
+            <p class="beginning-p">“What’s the cloud?” “Where is the cloud?” “Are we in the cloud now?!” These are all questions you’ve probably heard or even asked yourself.
+              Now new trend in IT is Cloud computing. When we hear that something is "in the cloud", what that's actually referring to is a repository
+              (such as large datacenters) where software applications and files are housed and made available through an Internet connection. In other words,
+              when you upload a photo to Instagram, you're essentially accessing and storing the photo in a cloud-based service, also know as a SaaS (Software as a Service) model.
+              We will discuss more on this top in later section.</p>
+            <p>Technically, a computing cloud is a group of servers networked together with the following two characteristics:</p>
+            <ul>
+              <li>They're accessible over a network such as the Internet.</li>
+              <li>They're virtualized, meaning multiple independent operating systems can be run on a server at once.</li>
+            </ul>
+            <img src="https://www.qualogy.com/static/upload/center-mw/8e1a483c-b880-4deb-a46d-34411320decd/1.png" alt="cloud-image" class="intro-cloud-image">
+            <span class="source-text">Photo by Richard Velden on <a href="https://www.qualogy.com/techblog/oracle/iaas-paas-saas-the-good-the-bad-and-the-ugly">QUALOGY.com</a></span>
+          </div>
+
+          <div id="Cloud_Computing">
+            <h1>What is Cloud Computing?</h1>
+            <p class="beginning-p">Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform
+              via the Internet with pay-as-you-go pricing. Whether you are running applications that share photos to millions of mobile users or you’re supporting
+              the critical operations of your business, a cloud services platform provides rapid access to flexible and low-cost IT resources. With cloud computing,
+              you don’t need to make large upfront investments in hardware and spend a lot of time on the heavy lifting of managing that hardware. Instead, you can
+              provision exactly the right type and size of computing resources you need to power your newest bright idea or operate your IT department. You can access
+              as many resources as you need, almost instantly, and only pay for what you use.</p>
+              <p>Cloud computing is a model that enables the following features:</p>
+              <ul>
+                <li>Users can provision and release resources on-demand.</li>
+                <li>Resources can be scaled up or down automatically, depending on the load.</li>
+                <li>Resources are accessible over a network with proper security.</li>
+                <li>Cloud service providers can enable a pay-as-you-go model, where customers are charged based on the type of resources and per usage.</li>
+              </ul>
+          </div>
+
+          <div id="Cloud_Computing_Services">
+            <h1>Cloud Computing Services</h1>
+            <p class="beginning-p">Cloud computing provides developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work such as procurement,
+              maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet
+              specific needs of different users. Each type of cloud service and deployment method provides you with different levels of control, flexibility, and management.
+              Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies you
+              can use, can help you decide what set of services is right for your needs.</p>
+              <ol>
+                <li><strong>Infrastructure as a Service (IaaS)</strong></li>
+                <p>means you're buying access to raw computing hardware over the Net, such as servers or storage. It typically provides access to networking features,
+                  computers (virtual or on dedicated hardware), and data storage space. Since you buy what you need and pay-as-you-go, this is often referred to as utility
+                  computing. Ordinary web hosting is a simple example of IaaS: you pay a monthly subscription or a per-megabyte/gigabyte fee to have a hosting company serve
+                  up files for your website from their servers.</p>
+
+                <li><strong>Platform as a Service (PaaS)</strong></li>
+                <p>means you use a complete application running on someone else's system. It removes the need for your organization to manage the underlying infrastructure
+                  (usually hardware and operating systems) and allows you to focus on the deployment and management of your applications. This helps you be more efficient
+                  as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting
+                  involved in running your application.Web-based email and Google Documents are perhaps the best-known examples.</p>
+
+                <li><strong>Software as a Service (SaaS)</strong></li>
+                <p>means you develop applications using Web-based tools so they run on systems software and hardware provided by another company. It provides you with a completed product
+                  that is run and managed by the service provider. In most cases, people referring to Software as a Service are referring to end-user applications. With a SaaS offering you
+                  do not have to think about how the service is maintained or how the underlying infrastructure is managed; you only need to think about how you will use that particular
+                  piece of software. A common example of a SaaS application is web-based email which you can use to send and receive email without having to manage feature additions to
+                  the email product or maintain the servers and operating systems that the email program is running on.</p>
+              </ol>
+              <figure>
+                <img src="https://www.qualogy.com/static/upload/center-mw/b489cdc3-c735-470b-b3af-8b74196b3775/Figure+1.jpg" alt="cloud-service-image" class="cloud-service-image">
+                <figcaption class="content-caption">Figure 1: What does each cloud model offer? The deeper the provided stack, the more control you lose as a customer [1] </figcaption>
+                <img src="https://www.qualogy.com/static/upload/center-mw/568508ac-8c2a-4a92-8af7-c06c99ce155c/Figure+2.png" alt="cloud-service-image" class="cloud-service-image">
+                <figcaption class="content-caption">Figure 2: Where IaaS offers servers and VMs for an internal IT department, PaaS will offer your development staff some tools to work with. Finally SaaS is intended for end-users [2].</figcaption>
+                <span class="source-text">Source by Richard Velden on <a href="https://www.qualogy.com/techblog/oracle/iaas-paas-saas-the-good-the-bad-and-the-ugly" >QUALOGY.com</a></span>
+              </figure>
+          </div>
+
+          <div id="Cloud_Deployment_Models">
+            <h1>Cloud Computing Deployment Models</h1>
+            <p class="beginning-p">Cloud computing deployment models are based on location. In order to know which deployment model would best suit your organization requirements,
+              it is necessary to know the four deployment types.</p>
+            <ul>
+              <li><strong>Public Cloud</strong>, is a type of hosting which cloud services are delivered over a network for public use. Customers do not have any control over the location
+                of the infrastructure. The cost is shared by all users, and are either free or in the form of a license policy like pay per user. Public clouds are great for organizations
+                that require managing the host application and the various applications users use.</li>
+              <li><strong>Private Cloud</strong>,  is a cloud infrastructure that is solely used by one organization. It gives organizations greater control over security and data which is
+                safeguarded by a firewall and managed internally. It can be hosted internally or externally. Private clouds are great for organizations that have high security demands, high
+                management demands and uptime requirements.</li>
+              <li><strong>Hybrid Cloud</strong>, uses both private and public clouds, but can remain separate entities. Resources are managed and can be provided either internally or by external providers.
+                A hybrid cloud is great for scalability, flexibility and security. An example of this is an organization can use public cloud to interact with customers, while keeping their data secured
+                through a private cloud.</li>
+              <li><strong>Community Cloud</strong>, is an infrastructure that is mutually shared between organizations that belong to a particular community. The community members generally share similar privacy,
+                performance and security concerns. An example of this is a community cloud at banks, government in a country, or trading firms. A community cloud can be managed and hosted internally or by a third
+                party provider. A community cloud is good for organizations that work on joint ventures that need centralized cloud computing ability for managing, building and executing their projects.</li>
+            </ul>
+            <img src="https://static.wixstatic.com/media/673ac4_814c489102b840f98931cd92ab06a934~mv2.png/v1/fill/w_966,h_433,al_c,lg_1,q_85/673ac4_814c489102b840f98931cd92ab06a934~mv2.webp" alt="cloud-image" class="cloud-model-image">
+            <span class="source-text">Photo from this <a href="https://cloudoye.wixsite.com/cloudoye-services/blog">blog</a> post</span>
+          </div>
+
+          <div id="Cloud_Service_Providers">
+            <h1>Cloud Service Providers</h1>
+            <ol>
+              <li class="beginning-p">- Amazon Web Services (AWS)</li>
+              <p>AWS is Amazon's cloud web hosting platform which offers fast, flexible, reliable and cost-effective solutions. It offers a service in the form of building block which can be used to create and deploy
+                any kind of application in the cloud. It is the most popular as it was the first to enter the cloud computing space.</p>
+              <p>Link: <a href="https://aws.amazon.com/">https://aws.amazon.com/</a></p>
+
+              <li>- Microsoft Azure Platform</li>
+              <p>Azure is a cloud computing platform which is launched by Microsoft in February 2010. This open source and flexible cloud platform which helps in development, data storage, service management & hosting solutions.</p>
+              <p>Link: <a href="https://azure.microsoft.com/en-in/">https://azure.microsoft.com/en-in/</a></p>
+
+              <li>- Google Cloud Platform (GCP)</li>
+              <p>Google Cloud is a set of solution and products which includes GCP & G suite. It helps you to solve all kind of business challenges with ease.</p>
+              <p>Link: <a href="https://cloud.google.com/">https://cloud.google.com/</a></p>
+
+              <li>- Salesforce cloud</li>
+              <p>Salesforce cloud computing offers multiple cloud services like Sales Cloud, Service Cloud, Marketing Cloud, etc. Helps you to accelerate production of your environment.</p>
+              <p>Link: <a href="https://www.salesforce.com/in/cloudcomputing">https://www.salesforce.com/in/cloudcomputing</a></p>
+
+              <li>- Oracle Cloud</li>
+              <p>Oracle Cloud offers innovative and integrated cloud services. It helps you to build, deploy, and manage workloads in the cloud or on premises. Oracle Cloud also helps companies to transform their business and reduce complexity.</p>
+              <p>Link: <a href="https://www.oracle.com/cloud/">https://www.oracle.com/cloud/</a></p>
+
+              <li>- IBM Cloud</li>
+              <p>IBM cloud is a full stack cloud platform which spans public, private and hybrid environments. It is built with a robust suite of advanced and AI tools.</p>
+              <p>Link: <a href="https://www.ibm.com/cloud/">https://www.ibm.com/cloud/</a></p>
+
+            </ol>
+          </div>
+
+          <div id="#aws">
+            <h1>Amazon Web Services</h1>
+            <p class="beginning-p">Amazon Web Services (AWS) is Amazon’s cloud web hosting platform that offers flexible, reliable, scalable, easy-to-use, and cost-effective solutions. If you want to make the most of the AWS cloud, then,
+              Amazon EC2 and Amazon S3 are both important services to understand. </p>
+            <p>Amazon Web Services offers a broad set of global cloud-based products including compute, storage, databases, analytics, networking, mobile, developer tools, management tools, IoT, security and enterprise applications.
+              In below section, we will learn about AWS computer services(Like EC2) and AWS Storage Services(Like S3). </p>
+          </div>
+
+          <div id="AWS_ec2">
+            <h1>Amazon Computer Services: EC2</h1>
+            <p class="beginning-p">Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers.</p>
+            <p>Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers.</p>
+            <p>The Amazon EC2 simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s
+              proven computing environment. Amazon EC2 reduces the time required to obtain and boot new server instances (called Amazon EC2 instances) to minutes, allowing you to quickly scale capacity, both up and
+              down, as your computing requirements change. Amazon EC2 changes the economics of computing by allowing you to pay only for capacity that you actually use. Amazon EC2 provides developers and system
+              administrators the tools to build failure resilient applications and isolate themselves from common failure scenarios.</p>
+            <img src="https://www.tutorialspoint.com/amazon_web_services/images/amazon_web_services.jpg" alt="EC2-image" class="EC2-image">
+
+          </div>
+
+          <div id="AWS_s3">
+            <h1>Amazon Storage Services: S3</h1>
+            <p class="beginning-p">Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries
+              can use it to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.
+              Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements.
+              Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.</p>
+          </div>
+
+          <div id="reference">
+            <h1>References</h1>
+            <p class="beginning-p">All the documentation on this page does not belong to me and is taken from the blow resources:</p>
+            <ul>
+              <li><a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html" target="_blank">Overview of Amazon Web Services</a></li>
+              <li><a href="https://wiki.appnexus.com/display/industry/Introduction+to+Cloud+Computing" target="_blank">AppNexus Industry Reference</a></li>
+              <li><a href="https://www.explainthatstuff.com/cloud-computing-introduction.html" target="_blank"> EXPLAINTHATSTUFF.com</a></li>
+              <li><a href="https://www.uniprint.net/en/7-types-cloud-computing-structures/" target="_blank">uniprint.net</a></li>
+              <li><a href="https://www.guru99.com/aws-tutorial.html" target="_blank">Guru99</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
