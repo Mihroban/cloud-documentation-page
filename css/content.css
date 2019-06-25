@@ -1,0 +1,82 @@
+body {
+  position: relative;
+}
+
+h1{
+  border-bottom: .1rem solid #ccc;
+  padding: 5% 0 3%;
+}
+
+.beginning-p{
+  padding-top: 3%;
+}
+
+p,li{
+  font-family: "Poppins", serif;
+  color: #4f5050;
+}
+
+.nav-tab{
+  top: 50px;
+  position: fixed;
+}
+
+.nav-item{
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.col-9 div {
+  margin: 0 5%;
+}
+
+#scrollSpy{
+  background-color: #f2f2f2;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.header-cloud-image{
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15%;
+}
+
+.title{
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #4477ff;
+}
+.intro-cloud-image{
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.cloud-service-image{
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+.source-text{
+  display: block;
+  text-align: center;
+}
+.content-caption{
+  color: #958f87;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.cloud-model-image{
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 3%;
+}
+.EC2-image{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
