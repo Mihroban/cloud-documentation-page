@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Cloud Computing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+    <!--Font Awesome/Fab icon Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- Bootstrap Link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-lg-3 col-md-4 col-sm-5 col-4" id="navbar">
+            <ul class="nav navbar-nav nav-tab flex-column">
+              <li class="navbar-brand nav-item">
+                <a href="#Introduction">
+                  <img src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/cloud-computing-512.png" class="header-cloud-image" alt="cloud-image">
+                  <header class="topic">Cloud</header>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#Introduction">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#What_is_Cloud_Computing">What is Cloud Computing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Cloud_Computing_Services">Cloud Computing Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Cloud_Deployment_Models">Cloud Deployment Models</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Cloud_Service_Providers">Cloud Service Providers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Amazon_Web_Services">Amazon Web Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Amazon_EC2">Amazon EC2</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Amazon_S3">Amazon S3</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#References">References</a>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="col-lg-9 col-md-8 col-sm-7 col-8">
+          <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header class="title">Introduction</header>
+                <p class="beginning-p">“What’s the cloud?” “Where is the cloud?” “Are we in the cloud now?!” These are all questions you’ve probably heard or even asked yourself.
+                  Now new trend in IT is Cloud computing. When we hear that something is "in the cloud", what that's actually referring to is a repository
+                  (such as large datacenters) where software applications and files are housed and made available through an Internet connection. In other words,
+                  when you upload a photo to Instagram, you're essentially accessing and storing the photo in a cloud-based service, also know as a SaaS (Software as a Service) model.
+                  We will discuss more on this top in later section.</p>
+                <p>Technically, a computing cloud is a group of servers networked together with the following two characteristics:</p>
+                <ul>
+                  <li>They're accessible over a network such as the Internet.</li>
+                  <li>They're virtualized, meaning multiple independent operating systems can be run on a server at once.</li>
+                </ul>
+                <img src="https://www.qualogy.com/static/upload/center-mw/8e1a483c-b880-4deb-a46d-34411320decd/1.png" alt="cloud-image" class="intro-cloud-image">
+                <span class="source-text">Photo by Richard Velden on <a href="https://www.qualogy.com/techblog/oracle/iaas-paas-saas-the-good-the-bad-and-the-ugly">QUALOGY.com</a></span>
+
+            </section>
+
+            <section class="main-section" id="What_is_Cloud_Computing">
+
+                <header class="title">What is Cloud Computing</header>
+                <p class="beginning-p">Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform
+                  via the Internet with pay-as-you-go pricing. Whether you are running applications that share photos to millions of mobile users or you’re supporting
+                  the critical operations of your business, a cloud services platform provides rapid access to flexible and low-cost IT resources. With cloud computing,
+                  you don’t need to make large upfront investments in hardware and spend a lot of time on the heavy lifting of managing that hardware. Instead, you can
+                  provision exactly the right type and size of computing resources you need to power your newest bright idea or operate your IT department. You can access
+                  as many resources as you need, almost instantly, and only pay for what you use.</p>
+                  <p>Cloud computing is a model that enables the following features:</p>
+                  <ul>
+                    <li>Users can provision and release resources on-demand.</li>
+                    <li>Resources can be scaled up or down automatically, depending on the load.</li>
+                    <li>Resources are accessible over a network with proper security.</li>
+                    <li>Cloud service providers can enable a pay-as-you-go model, where customers are charged based on the type of resources and per usage.</li>
+                  </ul>
+
+            </section>
+
+            <section class="main-section" id="Cloud_Computing_Services">
+                <header class="title">Cloud Computing Services</header>
+                <p class="beginning-p">Cloud computing provides developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work such as procurement,
+                  maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet
+                  specific needs of different users. Each type of cloud service and deployment method provides you with different levels of control, flexibility, and management.
+                  Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies you
+                  can use, can help you decide what set of services is right for your needs.</p>
+                  <ol>
+                    <li><strong>Infrastructure as a Service (IaaS)</strong></li>
+                    <p>means you're buying access to raw computing hardware over the Net, such as servers or storage. It typically provides access to networking features,
+                      computers (virtual or on dedicated hardware), and data storage space. Since you buy what you need and pay-as-you-go, this is often referred to as utility
+                      computing. Ordinary web hosting is a simple example of IaaS: you pay a monthly subscription or a per-megabyte/gigabyte fee to have a hosting company serve
+                      up files for your website from their servers.</p>
+
+                    <li><strong>Platform as a Service (PaaS)</strong></li>
+                    <p>means you use a complete application running on someone else's system. It removes the need for your organization to manage the underlying infrastructure
+                      (usually hardware and operating systems) and allows you to focus on the deployment and management of your applications. This helps you be more efficient
+                      as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting
+                      involved in running your application.Web-based email and Google Documents are perhaps the best-known examples.</p>
+
+                    <li><strong>Software as a Service (SaaS)</strong></li>
+                    <p>means you develop applications using Web-based tools so they run on systems software and hardware provided by another company. It provides you with a completed product
+                      that is run and managed by the service provider. In most cases, people referring to Software as a Service are referring to end-user applications. With a SaaS offering you
+                      do not have to think about how the service is maintained or how the underlying infrastructure is managed; you only need to think about how you will use that particular
+                      piece of software. A common example of a SaaS application is web-based email which you can use to send and receive email without having to manage feature additions to
+                      the email product or maintain the servers and operating systems that the email program is running on.</p>
+                  </ol>
+                  <figure>
+                    <img src="https://www.qualogy.com/static/upload/center-mw/b489cdc3-c735-470b-b3af-8b74196b3775/Figure+1.jpg" alt="cloud-service-image" class="cloud-service-image">
+                    <figcaption class="content-caption">Figure 1: What does each cloud model offer? The deeper the provided stack, the more control you lose as a customer [1] </figcaption>
+                    <img src="https://www.qualogy.com/static/upload/center-mw/568508ac-8c2a-4a92-8af7-c06c99ce155c/Figure+2.png" alt="cloud-service-image" class="cloud-service-image">
+                    <figcaption class="content-caption">Figure 2: Where IaaS offers servers and VMs for an internal IT department, PaaS will offer your development staff some tools to work with. Finally SaaS is intended for end-users [2].</figcaption>
+                    <span class="source-text">Source by Richard Velden on <a href="https://www.qualogy.com/techblog/oracle/iaas-paas-saas-the-good-the-bad-and-the-ugly" >QUALOGY.com</a></span>
+                  </figure>
+
+            </section>
+
+            <section class="main-section" id="Cloud_Deployment_Models">
+                <header class="title">Cloud Deployment Models</header>
+                <p class="beginning-p">Cloud computing deployment models are based on location. In order to know which deployment model would best suit your organization requirements,
+                  it is necessary to know the four deployment types.</p>
+                <ul>
+                  <li><strong>Public Cloud</strong>, is a type of hosting which cloud services are delivered over a network for public use. Customers do not have any control over the location
+                    of the infrastructure. The cost is shared by all users, and are either free or in the form of a license policy like pay per user. Public clouds are great for organizations
+                    that require managing the host application and the various applications users use.</li>
+                  <li><strong>Private Cloud</strong>,  is a cloud infrastructure that is solely used by one organization. It gives organizations greater control over security and data which is
+                    safeguarded by a firewall and managed internally. It can be hosted internally or externally. Private clouds are great for organizations that have high security demands, high
+                    management demands and uptime requirements.</li>
+                  <li><strong>Hybrid Cloud</strong>, uses both private and public clouds, but can remain separate entities. Resources are managed and can be provided either internally or by external providers.
+                    A hybrid cloud is great for scalability, flexibility and security. An example of this is an organization can use public cloud to interact with customers, while keeping their data secured
+                    through a private cloud.</li>
+                  <li><strong>Community Cloud</strong>, is an infrastructure that is mutually shared between organizations that belong to a particular community. The community members generally share similar privacy,
+                    performance and security concerns. An example of this is a community cloud at banks, government in a country, or trading firms. A community cloud can be managed and hosted internally or by a third
+                    party provider. A community cloud is good for organizations that work on joint ventures that need centralized cloud computing ability for managing, building and executing their projects.</li>
+                </ul>
+                <img src="https://static.wixstatic.com/media/673ac4_814c489102b840f98931cd92ab06a934~mv2.png/v1/fill/w_966,h_433,al_c,lg_1,q_85/673ac4_814c489102b840f98931cd92ab06a934~mv2.webp" alt="cloud-image" class="cloud-model-image">
+                <span class="source-text">Photo from this <a href="https://cloudoye.wixsite.com/cloudoye-services/blog">blog</a> post</span>
+
+            </section>
+
+            <section class="main-section" id="Cloud_Service_Providers">
+                <header class="title">Cloud Service Providers</header>
+                <ol>
+                  <li class="beginning-p">- Amazon Web Services (AWS)</li>
+                  <p>AWS is Amazon's cloud web hosting platform which offers fast, flexible, reliable and cost-effective solutions. It offers a service in the form of building block which can be used to create and deploy
+                    any kind of application in the cloud. It is the most popular as it was the first to enter the cloud computing space.</p>
+                  <p>Link: <a href="https://aws.amazon.com/">https://aws.amazon.com/</a></p>
+
+                  <li>- Microsoft Azure Platform</li>
+                  <p>Azure is a cloud computing platform which is launched by Microsoft in February 2010. This open source and flexible cloud platform which helps in development, data storage, service management & hosting solutions.</p>
+                  <p>Link: <a href="https://azure.microsoft.com/en-in/">https://azure.microsoft.com/en-in/</a></p>
+
+                  <li>- Google Cloud Platform (GCP)</li>
+                  <p>Google Cloud is a set of solution and products which includes GCP & G suite. It helps you to solve all kind of business challenges with ease.</p>
+                  <p>Link: <a href="https://cloud.google.com/">https://cloud.google.com/</a></p>
+
+                  <li>- Salesforce cloud</li>
+                  <p>Salesforce cloud computing offers multiple cloud services like Sales Cloud, Service Cloud, Marketing Cloud, etc. Helps you to accelerate production of your environment.</p>
+                  <p>Link: <a href="https://www.salesforce.com/in/cloudcomputing">https://www.salesforce.com/in/cloudcomputing</a></p>
+
+                  <li>- Oracle Cloud</li>
+                  <p>Oracle Cloud offers innovative and integrated cloud services. It helps you to build, deploy, and manage workloads in the cloud or on premises. Oracle Cloud also helps companies to transform their business and reduce complexity.</p>
+                  <p>Link: <a href="https://www.oracle.com/cloud/">https://www.oracle.com/cloud/</a></p>
+
+                  <li>- IBM Cloud</li>
+                  <p>IBM cloud is a full stack cloud platform which spans public, private and hybrid environments. It is built with a robust suite of advanced and AI tools.</p>
+                  <p>Link: <a href="https://www.ibm.com/cloud/">https://www.ibm.com/cloud/</a></p>
+                </ol>
+
+            </section>
+
+            <section class="main-section" id="Amazon_Web_Services">
+                <header class="title">Amazon Web Services</header>
+                <p class="beginning-p">Amazon Web Services (AWS) is Amazon’s cloud web hosting platform that offers flexible, reliable, scalable, easy-to-use, and cost-effective solutions. If you want to make the most of the AWS cloud, then,
+                  Amazon EC2 and Amazon S3 are both important services to understand. </p>
+                <p>Amazon Web Services offers a broad set of global cloud-based products including compute, storage, databases, analytics, networking, mobile, developer tools, management tools, IoT, security and enterprise applications.
+                  In below section, we will learn about AWS computer services(Like EC2) and AWS Storage Services(Like S3). </p>
+            </section>
+
+            <section class="main-section" id="Amazon_EC2">
+                <header class="title">Amazon EC2</header>
+                <p class="beginning-p">Amazon Elastic Compute Cloud (EC2) is a web service for launching and managing server instances in Amazon's data centers. You can use Amazon EC2 server instances at any time, for as long as you need,
+                  and for any legal purpose. Instances are available in different sizes and configurations.</p>
+                <p>The Amazon EC2 simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s
+                  proven computing environment. Amazon EC2 reduces the time required to obtain and boot new server instances (called Amazon EC2 instances) to minutes, allowing you to quickly scale capacity, both up and
+                  down, as your computing requirements change. Amazon EC2 changes the economics of computing by allowing you to pay only for capacity that you actually use. Amazon EC2 provides developers and system
+                  administrators the tools to build failure resilient applications and isolate themselves from common failure scenarios.</p>
+                <img src="https://www.tutorialspoint.com/amazon_web_services/images/amazon_web_services.jpg" alt="EC2-image" class="EC2-image">
+            </section>
+
+            <section class="main-section" id="Amazon_S3">
+                <header class="title">Amazon S3</header>
+                <p class="beginning-p">Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries
+                  can use it to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.
+                  Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements.
+                  Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.</p>
+                <img src="https://d1.awsstatic.com/Projects/v1/AWS_StaticWebsiteHosting_Architecture_4b.da7f28eb4f76da574c98a8b2898af8f5d3150e48.png" alt="S3-image" class="S3-image">
+                <h4 class="text-warning">Creating, Listing, and Deleting Amazon S3 Buckets</h4>
+                <p>This section provides examples of programming Amazon S3 using the AWS SDK for Java. <br>
+                  <span class="text-danger">Note*</span><br>
+                  These code examples assume that you understand the material in <a href="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/basics.html">Using the AWS SDK for Java</a> and have configured default AWS credentials using the information in <a href="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html">Set up AWS Credentials and Region for Development</a>.
+                </p>
+                <h4 class="text-warning">Create a Bucket</h4>
+                <p>Use the AmazonS3 client's createBucket method. The new Bucket is returned. The createBucket method will raise an exception if the bucket already exists. To check whether a bucket already exists before attempting to create one with the same name, call the doesBucketExist method. It will return true if the bucket exists, and false otherwise.</p>
+                <h6>Imports</h6>
+                <code class="text-secondary">
+                  <span>import</span> com.amazonaws.services.s3.AmazonS3ClientBuilder;<br>
+                  <span>import</span> com.amazonaws.services.s3.AmazonS3; <br>
+                  <span>import</span> com.amazonaws.services.s3.model.AmazonS3Exception; <br>
+                  <span>import</span> com.amazonaws.services.s3.model.Bucket;<br>
+                  <span>import</span> java.util.List;
+                </code>
+
+                <h6>Code</h6>
+                <code class="text-secondary">
+                  <span>final</span> AmazonS3 s3 = AmazonS3ClientBuilder.defaultClient(); <br>
+                  Bucket b = <span>null</span>; <br>
+                  <span>if</span> (s3.doesBucketExist(bucket_name)) {
+                      System.out.format("Bucket %s already exists.\n", bucket_name);
+                      b = getBucket(bucket_name); <br>
+                  } <span>else</span> { <br>
+                      <span>try</span> { <br>
+                          b = s3.createBucket(bucket_name); <br>
+                      } <span>catch</span> (AmazonS3Exception e) { <br>
+                          System.err.println(e.getErrorMessage()); <br>
+                      } <br>
+                  } <br>
+                  <span>return</span> b;
+                </code>
+                <p>See the <a href="https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/java/example_code/s3/src/main/java/aws/example/s3/CreateBucket.java">complete example</a> on GitHub.</p>
+
+                <h4 class="text-warning">List Buckets</h4>
+                <p>Use the <a href="https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html?com/amazonaws/services/s3/AmazonS3Client.html">AmazonS3</a> client's listBucket method. If successful, a list of <a href="https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html?com/amazonaws/services/s3/model/Bucket.html">Bucket</a> is returned.</p>
+                <h6>Imports</h6>
+                <code class="text-secondary">
+                  <span>import</span> com.amazonaws.services.s3.AmazonS3; <br>
+                  <span>import</span> com.amazonaws.services.s3.AmazonS3ClientBuilder; <br>
+                  <span>import</span> com.amazonaws.services.s3.model.Bucket; <br>
+                  <span>import</span> java.util.List;
+                </code>
+
+              <h6>Code</h6>
+              <code class="text-secondary">
+                <span>final</span> AmazonS3 s3 = AmazonS3ClientBuilder.defaultClient(); <br>
+                List<Bucket> buckets = s3.listBuckets(); <br>
+                System.out.println("Your Amazon S3 buckets are:"); <br>
+                <span>for</span> (Bucket b : buckets) { <br>
+                    System.out.println("* " + b.getName()); <br>
+                }
+              </code>
+              <p>See the <a href="https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/java/example_code/s3/src/main/java/aws/example/s3/ListBuckets.java">complete example</a> on GitHub.</p>
+
+              <h4 class="text-warning">Delete an Empty Bucket</h4>
+              <p>Before you can delete an Amazon S3 bucket, you must ensure that the bucket is empty or an error will result. If you have a versioned bucket, you must also delete any versioned objects associated with the bucket.
+              (Please Check the link for more details on <a href="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3-buckets.html">Removing Objects from an Unversioned/Versioned Bucket Before Deleting It</a>) </p>
+              <p>Once you remove the objects from a bucket (including any versioned objects), you can delete the bucket itself by using the AmazonS3 client's deleteBucket method.</p>
+              <h6>Imports</h6>
+              <code class="text-secondary">
+                <span>import</span> com.amazonaws.AmazonServiceException; <br>
+                <span>import</span> com.amazonaws.services.s3.AmazonS3; <br>
+                <span>import</span> com.amazonaws.services.s3.AmazonS3ClientBuilder;
+              </code>
+
+              <h6>Code</h6>
+              <code class="text-secondary">
+                <span>final</span> AmazonS3 s3 = AmazonS3ClientBuilder.defaultClient(); <br>
+                <span>try</span> { <br>
+                    s3.deleteBucket(bucket_name); <br>
+                } <span>catch</span> (AmazonServiceException e) { <br>
+                    System.err.println(e.getErrorMessage()); <br>
+                    System.exit(1); <br>
+                }
+            </code>
+            <p>See the <a href="https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/java/example_code/s3/src/main/java/aws/example/s3/DeleteBucket.java">complete example</a> on GitHub.</p>
+            </section>
+
+            <section class="main-section" id="References">
+                <header class="title">References</header>
+                <p class="beginning-p">All the documentation on this page does not belong to me and is taken from the blow resources:</p>
+                <ul>
+                  <li><a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html" target="_blank">Overview of Amazon Web Services</a></li>
+                  <li><a href="https://wiki.appnexus.com/display/industry/Introduction+to+Cloud+Computing" target="_blank">AppNexus Industry Reference</a></li>
+                  <li><a href="https://www.explainthatstuff.com/cloud-computing-introduction.html" target="_blank"> EXPLAINTHATSTUFF.com</a></li>
+                  <li><a href="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3-buckets.html" target="_blank">Amazon S3 Examples</a></li>
+                  <li><a href="https://www.uniprint.net/en/7-types-cloud-computing-structures/" target="_blank">uniprint.net</a></li>
+                  <li><a href="https://www.guru99.com/aws-tutorial.html" target="_blank">Guru99</a></li>
+                </ul>
+            </section>
+
+      </main>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
